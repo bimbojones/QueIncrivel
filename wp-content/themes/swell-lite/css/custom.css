@@ -1,0 +1,360 @@
+/* ==========================================================================
+   Que Incrivel 
+   ========================================================================== */
+@font-face {
+  font-family: 'jenna_sueregular';
+  src: url("../fonts/jennasue-webfont.eot");
+  src: url("../fonts/jennasue-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/jennasue-webfont.woff2") format("woff2"), url("../fonts/jennasue-webfont.woff") format("woff"), url("../fonts/jennasue-webfont.ttf") format("truetype"), url("../fonts/jennasue-webfont.svg#jenna_sueregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'lobsterregular';
+  src: url("../fonts/lobster-regular-webfont.eot");
+  src: url("../fonts/lobster-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lobster-regular-webfont.woff2") format("woff2"), url("../fonts/lobster-regular-webfont.woff") format("woff"), url("../fonts/lobster-regular-webfont.ttf") format("truetype"), url("../fonts/lobster-regular-webfont.svg#lobsterregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'WalterTurncoat-Regular';
+  src: url("../fonts/WalterTurncoat_gdi.eot");
+  src: url("../fonts/WalterTurncoat_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/WalterTurncoat_gdi.woff") format("woff"), url("../fonts/WalterTurncoat_gdi.ttf") format("truetype"), url("../fonts/WalterTurncoat_gdi.svg#WalterTurncoat-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+@font-face {
+  font-family: 'didact_gothicregular';
+  src: url("../fonts/didactgothic-webfont.eot");
+  src: url("../fonts/didactgothic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/didactgothic-webfont.woff2") format("woff2"), url("../fonts/didactgothic-webfont.woff") format("woff"), url("../fonts/didactgothic-webfont.ttf") format("truetype"), url("../fonts/didactgothic-webfont.svg#didact_gothicregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 7, ../scss/sass/ui/_main.scss */
+body {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background: url("../images/background.png");
+}
+
+/* line 17, ../scss/sass/ui/_main.scss */
+#main .post, #main .box {
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: justify;
+  position: relative;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+/* line 26, ../scss/sass/ui/_main.scss */
+#main .post span, #main .box span {
+  font-size: 18px;
+  font-family: 'didact_gothicregular';
+  letter-spacing: 0.5px;
+}
+/* line 32, ../scss/sass/ui/_main.scss */
+#main .post .image-container, #main .box .image-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+/* line 37, ../scss/sass/ui/_main.scss */
+#main .post .image-container h2, #main .box .image-container h2 {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin: 0;
+  padding: 0;
+  font-size: 23px;
+  padding: 4px 10px;
+  color: #555;
+  font-family: 'WalterTurncoat-Regular';
+  /*text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;*/
+  color: #555;
+  background: white;
+}
+/* line 52, ../scss/sass/ui/_main.scss */
+#main .post .image-container img, #main .box .image-container img {
+  width: 100%;
+  height: auto;
+}
+/* line 58, ../scss/sass/ui/_main.scss */
+#main .post:before, #main .post:after, #main .box:before, #main .box:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0 0 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 0 20px;
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+/* line 73, ../scss/sass/ui/_main.scss */
+#main .post:after, #main .box:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+/* line 84, ../scss/sass/ui/_main.scss */
+#main .box {
+  text-align: center;
+}
+/* line 87, ../scss/sass/ui/_main.scss */
+#main .box h2 {
+  margin-top: 10px;
+  font-family: 'WalterTurncoat-Regular';
+}
+/* line 92, ../scss/sass/ui/_main.scss */
+#main .box p {
+  font-size: 17px;
+  font-family: 'didact_gothicregular';
+  letter-spacing: 0.5px;
+}
+/* line 98, ../scss/sass/ui/_main.scss */
+#main .box img {
+  width: 100%;
+  margin: 5px 0;
+}
+/* line 104, ../scss/sass/ui/_main.scss */
+#main .flexslider {
+  border: none;
+  padding: 0;
+  box-shadow: 0px 20px 80px -10px #555555;
+}
+/* line 109, ../scss/sass/ui/_main.scss */
+#main .flexslider .flex-control-nav {
+  bottom: -50px;
+}
+/* line 113, ../scss/sass/ui/_main.scss */
+#main .flexslider .flex-direction-nav a {
+  height: 46px;
+}
+
+/* line 120, ../scss/sass/ui/_main.scss */
+footer {
+  padding: 20px;
+}
+
+/* line 124, ../scss/sass/ui/_main.scss */
+.panel {
+  position: relative;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  perspective: 600px;
+}
+/* line 131, ../scss/sass/ui/_main.scss */
+.panel .front {
+  float: none;
+  position: relative;
+  z-index: 900;
+  width: 100%;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  transform: rotateX(0deg) rotateY(0deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* -- transition is the magic sauce for animation -- */
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 153, ../scss/sass/ui/_main.scss */
+.panel.flip .front {
+  background: #fff;
+  z-index: 900;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+/* line 162, ../scss/sass/ui/_main.scss */
+.panel .back {
+  float: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  background: #777;
+  width: 100%;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-179deg);
+  /* setting to 180 causes an unnatural-looking half-flip */
+  transform: rotateY(-179deg);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* -- transition is the magic sauce for animation -- */
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+/* line 188, ../scss/sass/ui/_main.scss */
+.panel.flip .back {
+  background: #fff;
+  z-index: 1000;
+  -webkit-transform: rotateX(0deg) rotateY(0deg);
+  -moz-transform: rotateX(0deg) rotateY(0deg);
+  transform: rotateX(0deg) rotateY(0deg);
+}
+
+/* line 198, ../scss/sass/ui/_main.scss */
+#logo img {
+  max-height: 300px;
+}
+
+/* line 202, ../scss/sass/ui/_main.scss */
+#custom-header {
+  background: none;
+}
+
+/* line 206, ../scss/sass/ui/_main.scss */
+.admin-bar #navigation {
+  margin-top: 0;
+}
+
+/* line 210, ../scss/sass/ui/_main.scss */
+#menu-principal {
+  font-family: 'WalterTurncoat-Regular';
+  font-size: 25px;
+}
+
+/* line 215, ../scss/sass/ui/_main.scss */
+.menu a {
+  margin: 24px 0;
+}
+
+/* line 219, ../scss/sass/ui/_main.scss */
+#navbar {
+  font-family: 'jenna_sueregular';
+  font-size: 40px;
+}
+/* line 222, ../scss/sass/ui/_main.scss */
+#navbar a {
+  display: block;
+}
+/* line 227, ../scss/sass/ui/_main.scss */
+#navbar .dropdown-menu a {
+  font-size: 30px;
+}
+/* line 232, ../scss/sass/ui/_main.scss */
+#navbar .navbar {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  border: 0;
+  background: none;
+  border-radius: 0px;
+}
+/* line 239, ../scss/sass/ui/_main.scss */
+#navbar .navbar-default .navbar-nav > .active > a, #navbar .navbar-default .navbar-nav > .active > a:hover, #navbar .navbar-default .navbar-nav > .active > a:focus {
+  color: #555;
+  background: none;
+}
+/* line 244, ../scss/sass/ui/_main.scss */
+#navbar .navbar-default .navbar-nav > .open > a, #navbar .navbar-default .navbar-nav > .open > a:hover, #navbar .navbar-default .navbar-nav > .open > a:focus {
+  color: #555;
+  background: none;
+}
+/* line 249, ../scss/sass/ui/_main.scss */
+#navbar .navbar-form {
+  line-height: 40px;
+  margin: 0;
+}
+/* line 253, ../scss/sass/ui/_main.scss */
+#navbar .navbar-form input {
+  /*background: none;*/
+  font-size: 28px;
+  height: 40px;
+}
+/* line 259, ../scss/sass/ui/_main.scss */
+#navbar .navbar-form button {
+  background: none;
+  border: 0;
+  margin-top: 10px;
+}
+/* line 267, ../scss/sass/ui/_main.scss */
+#navbar.affix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+/* line 274, ../scss/sass/ui/_main.scss */
+#navbar.affix #logo {
+  opacity: 0;
+}
+/* line 278, ../scss/sass/ui/_main.scss */
+#navbar.affix .navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  background: #D4EFE3;
+  -moz-box-shadow: #555555 0px 10px 30px -10px;
+  -webkit-box-shadow: #555555 0px 10px 30px -10px;
+  box-shadow: #555555 0px 10px 30px -10px;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+/* line 291, ../scss/sass/ui/_main.scss */
+.nav-wrapper {
+  min-height: 100px;
+}
+
+/* fix affix */
